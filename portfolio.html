@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>my-portfolio</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="portfolio.js"></script>
+</head>
+
+<body>
+    <!-- homepage -->
+    <!-- <img src="back.jpeg" alt="" id="background-img"> -->
+    <div id="header">
+        <img src="back.jpeg" alt="" id="background-img">
+        <div class="container">
+            <a href="#">Tvg<span id="headcolor">Digital</span></a>
+            <ul>
+                <li>
+                    <a href="#"><span id="headcolor">Home</span></a>
+                </li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-text">
+            <p> <span id="headtext">Hi, </span>My name is</p>
+            <h1>Sagar <span id="headtext"><br> vishwakarma</span></h1>
+            <p id="paragraph"> I,M A UI/UX DESIGHNER</p>
+            <div class="shape"></div>
+
+            <!-- <img src="/images/sagar.png" alt="" class="sg-img"> -->
+        </div>
+        <div class="icons">
+            <span><a href=//www.instagram.com/dev.sgr_ target="_blank"><i class="fa-brands fa-instagram"
+                        id="insta"></i></a></span>
+            <span><a href="#"><i class="fa-brands fa-facebook"></i></a></span>
+            <span><i class="fa-brands fa-x-twitter"></i></span>
+            <span><a href="https://github.com/sagar00z" target="_blank"><i class="fa-brands fa-github"></i></a></span>
+        </div>
+
+    </div>
+
+    <!-- About page -->
+
+
+    <div class="About">
+        <div class="container-2">
+            <div class="two-sides">
+                <div class="left-img">
+                    <img src="/images/man.png" alt="" class="left">
+                </div>
+
+                <div class="right-obj">
+                    <h1>About us</h1>
+                    <p>Hello, I'm Sagar, a passionate web developer based in Bhiwandi. I specialize in building
+                        responsive and user-friendly websites and web applications.I'm currently honing my skills in
+                        HTML, CSS, and JavaScript, React, and python and I'm excited to delve into more advanced topics
+                        as I progress through my studies.Although I'm in my first year, I've already started working on
+                        small projects and experimenting with different technologies. I believe in continuous learning
+                        and improvement.</p>
+
+                    <div class="tab-tittle">
+                        <p class="tab-links active-links tab-contents" onclick="openTab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('Education')">Education</p>
+                    </div>
+                    <div class="tab-info active-info" id="Skills">
+                        <ul>
+                            <li><span>UI/UX Design</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Devlopment</span><br> Designing Web Application</li>
+                            <li><span> Working With Framework/Library</span><br> React ,Boostrap,Tailwind</li>
+                        </ul>
+                    </div>
+                    <div class="tab-info" id="Education">
+                        <ul>
+                            <li><span>2022</span><br>UI/UX Design and Python training at institute</li>
+                            <li><span>2023</span><br>Start Frontend devlopment in first year </li>
+                            <li><span>2024 </span><br>Start backend devlopment in second year</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- services -->
+
+    <div id="services">
+
+        <div class="service-heading1">
+            <h1 class="service-heading"> My Services</h1>
+        </div>
+        <div class="container-3">
+            <div class="service-list">
+                <div class="list-1">
+                    <i class="fa-solid fa-code"></i>
+                    <h1>Web Design</h1>
+                    <p>Crafting captivating online experiences with custom web designs that are responsive, intuitive,
+                        and optimized for performance.</p>
+                </div>
+                <div class="list-1 list-3">
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h1>UI/UX Design</h1>
+                    <p>Our designs prioritize intuitive navigation, engaging visuals, and user-centric interfaces to
+                        maximize engagement and satisfaction. </p>
+                </div>
+                <div class="list-1 list-3">
+                    <i class="fa-brands fa-google"></i>
+                    <h1>Online Ads</h1>
+                    <p id="list-3-p">We are certified Ad Experts.(Google and - Meta Ad Expert).</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------- Skills------------------ -->
+
+
+    <div id="skills">
+
+        <div class="skill-heading">
+            <h1 class="skill-heading-text">Skills</h1>
+        </div>
+        <div class="container-4">
+            <div class="skill-list">
+                <div class="All-list">
+                    <img src="/images/javascript.png">
+                    <h2>JavaScript</h2>
+
+                </div>
+                <div class="All-list">
+                    <img src="/images/react.png" width="100px" height="100px">
+                    <h2>React Native</h2>
+
+                </div>
+                <div class="All-list">
+                    <img src="/images/python.png" width="100px" height="100px">
+                    <h2 id="python-text">Python</h2>
+
+                </div>
+                <div class="All-list">
+                    <img src="/images/html.png" width="100px" height="100px">
+                    <h2 id="python-text">HTML</h2>
+
+                </div>
+                <div class="All-list">
+                    <img src="/images/css.png" width="100px" height="100px">
+                    <h2 id="css-text">Css</h2>
+
+                </div>
+                <div class="All-list All-list-3">
+                    <p>Starting to learn diffrent Framework and Databases.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------Footer---------- -->
+<div id="contact">
+    <div class="container-5">
+        <div class="row">
+            <div class="contact-left">
+                <h1>Contact us</h1>
+                <p> <i class="fa-solid fa-paper-plane"></i> Contact@tvgdigital.com</p>
+                <p> <i class="fa-solid fa-square-phone"></i> +91 8080799862</p>
+                
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"id="insta"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href=""><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                <input type="text" name="text" placeholder="Your name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <textarea name="Massege"  rows="8" placeholder="Your Massege" required></textarea>
+                <button type="submit">submit</button>
+            </form>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="copyright">
+    <p>&copy; 2024 Made by Sagar or TvgDigital </p>
+</div>
+
+
+</body>
+
+</html>

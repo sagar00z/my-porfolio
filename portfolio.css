@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@600&family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+background: #080808;
+color: #fff;
+display: inline-block;
+}
+#header{
+    width: 100vw;
+    height: 100vh;
+}
+
+#background-img{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-attachment:fixed;
+    position: fixed;
+    filter: blur(10px);
+    z-index: -1;
+}
+.container{
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container > a{
+    padding: 56px 197px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #ffff;
+    font-weight: 900;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.container > a #headcolor{
+    color: #f0af15;
+}
+.container ul{
+    display: flex;
+    margin: 60px 175px;
+   
+}
+.container ul li{
+    list-style: none;
+    margin: 0 30px;
+   
+}
+.container ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    font-family: 'Josefin Sans', sans-serif;
+    position: relative;
+    
+}
+.container ul li a #headcolor{
+    color: #f0af15;
+}
+.container ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#f0af15 ;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.container ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin: 190px 200px;
+    display: inline-block;
+}
+.header-text p{
+    padding: 0 10px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif; 
+}
+.header-text p #headtext{ 
+    color: #fcb81b;
+}
+.header-text h1{
+    padding: 4px 0;
+    font-size: 112px;
+    font-weight:600 ;
+}
+.header-text h1  #headtext{
+    color: #e6a919;
+}
+.header-text #paragraph{
+    padding: 19px 10px;
+    font-weight: 600;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.shape{
+    position: absolute;
+    left: 62%;
+    bottom: 8%;
+    width: 25%;
+    height: 50vh;
+    background:linear-gradient(  #db9e0f,#f0af15,#ffb303,#de9b00)  ;
+    border-radius: 64% 35% 54% 46% / 28% 32% 68% 72%  ;
+   
+}
+/* .header-text .sg-img{
+    position: absolute;
+    left: 60%;
+    bottom: 8%;
+    width: 28vw;
+    height: 101vh;
+    object-fit: cover;
+    z-index: 1;
+    filter: brightness(1.2), drop-shadow(1.2);
+
+} */
+
+.icons{
+    margin: 20px 30px;
+    width: 22vw;
+    height: 15vh;
+    position: relative;
+    left: 7.5%;
+    bottom: 20%;
+    display: flex;
+    justify-content: space-around;
+}
+.icons span{
+    width: 50px;
+    height: 50px;
+    background: #1b1b1b;
+    border-radius: 50%;
+}
+.icons span a{
+    text-decoration: none;
+    color: #fff8f8;
+}
+.icons i{
+    font-size: 26px;
+    position: relative;
+    top: 12px;
+    left: 12px;
+}
+.icons span #insta{
+    position: relative;
+    left: 13px;
+}
+.icons span:active{
+    background: #121212;
+}
+
+
+/* ...................About.............. */
+
+
+ .About{
+    padding: 80px 170px;
+    flex-wrap:wrap ;
+    background: #1b1b1b;
+ }
+.two-sides{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+}
+.left-img{
+    flex-basis: 30%;
+    background: #0d0d0de5;
+    border-radius: 12px;
+}
+.left{
+    width: 24vw;
+    height: 71vh;
+    object-fit: cover;
+   
+}
+
+.right-obj{
+    flex-basis: 60%;
+    margin-top: 60px;
+}
+.right-obj h1{
+    font-size: 60px;
+    color: #f0b937;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.right-obj p{
+    padding: 12px 0;
+    font-size: 20px;
+    line-height: 27px;
+    font-family: "Lato", sans-serif;
+}
+.tab-tittle{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right:  50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background:#f0af15 ;
+    position: absolute;
+    left: 1px;
+    bottom: -4px;
+    transition: 0.5s;
+}
+.tab-links.active-links::after{
+    width: 60%;
+}
+.tab-info ul li{
+    list-style: none;
+    margin: 26px 0;
+    font-family: 'Lato', sans-serif;
+}
+.tab-info ul li span{
+    color: #f0af15;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+}
+.tab-info{
+    display: none;
+}
+.tab-info.active-info{
+    display: block;
+}
+
+
+/* services........... */
+
+#services{
+    width: 100vw;
+    height: 60vh;
+    padding: 30px 0px;
+    margin-top: 20px;
+    margin-left: 25px;
+}
+.service-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    grid-gap: 20px;
+    margin-top: 50px;
+}
+
+.service-heading1{
+    width: 88%;
+    height: 40%;
+    background: #1b1b1b;
+    margin: 0 88px;
+    border-radius: 20px;
+}
+
+.service-heading{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding-top: 25px;
+    color: #e2830e;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.container-3{
+    margin: 10px 100px;
+    position: relative;
+    bottom: 20%;
+    left: 1.5%;
+    
+}
+.container-3 .list-1{
+    width: 80%;
+    height: 30vh;
+    background: #101010;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border-color: 6px solid #000;
+    cursor: pointer;
+}
+.list-1{
+    transition: all 0.5s;
+    border: 1px solid #fff;
+}
+.list-1 p{
+    position: relative;
+    top: 60px;
+    left:-2%;
+    padding: 40px 49px;
+    font-size: 15px;
+    font-weight: 900;
+    color: #fff8f8;
+    font-family: 'Lato', sans-serif;
+    line-height: 22px;
+}
+.list-1 h1{
+    position: relative;
+    top: 78px;
+    padding:  0 38px;
+    font-size: 35px;
+   font: 900;
+    color: #fff8f8;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.list-1 i{
+    position: relative;
+    top: 35px;
+    font-size: 30px;
+    padding:  0 40px;
+    color: #fff8f8;
+    
+}
+.list-3 #list-3-p{
+    position: relative;
+    left:-9%;
+    padding: 40px 80px;
+}
+.list-1:hover{
+    background: #e17f06;
+    transform: scale(1.1);
+
+}
+
+/* ------------Skills------------ */
+#skills{
+    width: 98vw;
+    height: 110vh;
+    padding: 30px 10px;
+    margin: 0 30px;
+    background: #1b1b1b;
+    border-radius: 20px;
+}
+.skill-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50vh,1fr));
+    grid-gap: 40px;
+}
+.skill-heading{
+    margin-right: 80px;
+}
+.skill-heading-text{
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    padding-top: 20px;
+    color: #e2830e;
+    font-size: 40px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.container-4{
+    margin-top: 60px;
+    margin-left: 155px;
+}
+.All-list{
+    width: 60%;
+    height: 40vh;
+    background: #101010;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px solid #fff;
+   transition: all 0.5s;
+}
+.All-list img{
+    width: 200px;
+    height: 200px;
+    margin: 30px 60px;
+}
+.All-list h2{
+    font-size: 33px;
+    margin-left: 76px;
+    font-weight: 600;
+    margin-top: 5px;
+    font-family:'Josefin Sans', sans-serif ;
+    
+}
+.All-list #python-text{
+    margin-left: 100px;
+}
+.All-list:hover {
+    transform: translateY(-20px);
+    border-radius: 30px;
+}
+
+.All-list-3{
+    border:  4px solid #ffffff;
+    transition: all 0.5s;
+}
+.All-list-3 p{
+    text-align: center;
+    margin-top: 50%;
+    font-size: 19px;
+    font-weight: 600;
+    padding: 0 18px;
+    font-family:'Lato', sans-serif ;
+    line-height: 28px;
+}
+.All-list-3:hover{
+    transform: scale(1.1);
+    border-radius: 30px;
+}
+#css-text{
+    margin-left:120px ;
+}
+
+
+/* ------------Footer---------- */
+
+#contact{
+    height: 60vh;
+}
+.row{
+    display: flex;
+}
+.contact-left{
+    flex-basis: 20%;
+    margin-left: 10%;
+    margin-top: 80px;
+}
+.contact-right{
+    flex-basis: 60%;
+    margin-top: 75px;
+}
+.contact-left h1{
+    margin-left: 18px;
+    font-size: 45px;
+    font-family:'Josefin Sans', sans-serif ;
+    color: #de9b00;
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p i{
+    color: #db9e0f;
+    margin-left: 15px;
+    margin-right: 12px;
+    font-size: 20px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 23px;
+    margin-left: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: all 0.3s;
+}
+.social-icons a:hover{
+    color: #db9e0f;
+    transform: translateY(-5px);
+}
+.contact-right form{
+    width: 100%;
+}
+form input,form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+form button{
+    width: 100px;
+    height: 38px;
+    font-family:'Lato', sans-serif ;
+    font-size: 20px;
+    font-weight: 600;
+    color: #000;
+    border-radius: 4px;
+    border: 0;
+    outline: none;
+    background: #db9e0f;
+    padding-bottom: 2px;
+    cursor: pointer;
+    margin-left: 46%;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+
+/* ---------- samll screen ---------- */
+
+@media only screen and (max-width:600px) {
+    
+}
